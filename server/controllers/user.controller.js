@@ -1,4 +1,6 @@
 import User from "../models/user.schema.js";
+import { sendEmailNotification } from "../utils/email.js";
+import { registrationWelcomeTemplate } from "../utils/emailTemplete.js";
 
 export const registerUser = async (req, res) => {
   const { name, username, email, password, bio, profilePic, isPrivate } =
@@ -41,6 +43,11 @@ export const registerUser = async (req, res) => {
       sameSite: "strict",
       maxAge: 24 * 60 * 60 * 1000,
     });
+    sendEmailNotification(
+      user.email,
+      "Welcome to Instagram",
+      registrationWelcomeTemplate(user.name)
+    );
     return res.status(201).json({
       success: true,
       message: "User Registered Successfully!",

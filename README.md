@@ -13,33 +13,73 @@ This project is a backend API for a social media platform, inspired by Instagram
 - **Notifications:** Receive notifications for likes, comments, follows, stories, and messages.
 - **Follow System:** Follow and unfollow users, view followers and following lists.
 - **Middleware:** `authMiddleware` to protect routes and authenticate users.
+- **Middleware:** `uploadMiddleware` Middleware function to filter uploaded files by type (jpeg, jpg, png, gif) and video (mp4, mov, avi) files.
 
 ## Project Structure
 
 ```
 server/
-├── config/
-│   └── config.js
+├── db/
+│   └── db.js
 ├── controllers/
-│   ├── auth.controller.js
-│   ├── message.controller.js
+│   ├── comment.controller.js
+│   ├── follow.controller.js
 │   ├── notification.controller.js
 │   ├── post.controller.js
 │   ├── story.controller.js
-│   └── user.controller.js
+│   |── user.controller.js
+│   |── like.controller.js
+│   └── message.controller.js
 ├── models/
+│   ├── comment.model.js
+│   ├── like.model.js
 │   ├── message.model.js
 │   ├── notification.model.js
 │   ├── post.model.js
 │   ├── story.model.js
 │   └── user.model.js
 ├── routes/
-│   ├── auth.routes.js
+│   ├── like.routes.js
+│   ├── comment.routes.js
+│   ├── follow.routes.js
 │   ├── message.routes.js
 │   ├── notification.routes.js
 │   ├── post.routes.js
 │   ├── story.routes.js
 │   └── user.routes.js
+├── middlewares/
+│   ├── auth.middleware.js
+│   └── upload.middleware.js
+├── utils/
+│   ├── email.js
+│   ├── cloudinary.js
+├── app.js
+└── package.json
+```
+
+## API Endpoints
+
+All endpoints are prefixed with `/api/v1/`.
+
+### Users
+
+- `POST /users/register` — Register a new user
+- `POST /users/login` — Log in a user
+- `GET /users/profile/:id` — Get user profile
+  ├── app.js
+  └── package.json
+
+```
+
+## API Endpoints
+
+All endpoints are prefixed with `/api/v1/`.
+
+### Users
+
+- `POST /users/register` — Register a new user
+- `POST /users/login` — Log in a user
+- `GET /users/profile/:id` — Get user profile by ID
 ├── utils/
 │   ├── auth.js
 │   ├── cloudinary.js
