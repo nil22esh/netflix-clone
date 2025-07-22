@@ -1,0 +1,76 @@
+.register-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+}
+
+.register-box {
+  width: 350px;
+  border: 1px solid #dbdbdb;
+  padding: 40px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.logo {
+  font-family: "Grand Hotel", cursive;
+  font-size: 48px;
+  margin-bottom: 15px;
+}
+
+.register-msg {
+  font-size: 16px;
+  color: #8e8e8e;
+  margin-bottom: 20px;
+}
+
+.register-form input {
+  width: 100%;
+  margin: 6px 0;
+  padding: 10px;
+  background: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.register-form button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  background-color: #0095f6;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.terms-msg {
+  margin-top: 15px;
+  font-size: 11px;
+  color: #8e8e8e;
+}
+
+.login-link-box {
+  margin-top: 10px;
+  padding: 20px;
+  border: 1px solid #dbdbdb;
+  width: 350px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.login-link-box a {
+  color: #0095f6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.error-message {
+  color: red;
+  margin-top: 10px;
+  text-align: center;
+}

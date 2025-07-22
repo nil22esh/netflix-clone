@@ -1,0 +1,43 @@
+.error-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 80vh;
+  text-align: center;
+  background-color: #f6f8fb;
+  color: #2c3e50;
+  padding: 2rem;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.error-page h1 {
+  font-size: 8rem;
+  color: #445d91;
+  margin-bottom: 0.5rem;
+}
+
+.error-page h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.error-page p {
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 2rem;
+}
+
+.back-home {
+  background-color: #445d91;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  text-decoration: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+.back-home:hover {
+  background-color: #2e4374;
+}

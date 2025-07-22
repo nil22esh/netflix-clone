@@ -1,0 +1,89 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  font-family: Arial, sans-serif;
+}
+
+.login-box {
+  width: 350px;
+  border: 1px solid #dbdbdb;
+  padding: 40px;
+  background-color: #fff;
+  text-align: center;
+}
+
+.logo {
+  font-family: "Grand Hotel", cursive;
+  font-size: 48px;
+  margin-bottom: 30px;
+}
+
+.login-form input {
+  width: 100%;
+  margin: 5px 0;
+  padding: 10px;
+  background: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  font-size: 14px;
+}
+
+.login-form button {
+  margin-top: 10px;
+  width: 100%;
+  padding: 10px;
+  background-color: #0095f6;
+  color: white;
+  border: none;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.divider {
+  margin: 20px 0;
+  font-size: 13px;
+  color: #8e8e8e;
+}
+
+.login-facebook {
+  background: none;
+  border: none;
+  color: #385185;
+  font-weight: bold;
+  cursor: pointer;
+  margin-bottom: 10px;
+}
+
+.forgot-password {
+  font-size: 12px;
+  color: #00376b;
+  cursor: pointer;
+}
+
+.signup-box {
+  margin-top: 10px;
+  padding: 20px;
+  border: 1px solid #dbdbdb;
+  width: 350px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.signup-box a {
+  color: #0095f6;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.get-app {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.store-buttons img {
+  height: 40px;
+  margin: 5px;
+}

@@ -126,6 +126,30 @@ export const loginUser = async (req, res) => {
   }
 };
 
+export const getMyProfile = async (req, res) => {
+  try {
+    const userId = req.user.id;
+    if (!userId) {
+      return res.status(401).json({
+        success: false,
+        message: "Unauthorized. No token found",
+      });
+    }
+    const user = await User.findById(userId);
+    return res.status(200).json({
+      success: true,
+      message: "User profile fetched successfully",
+      user,
+    });
+  } catch (error) {
+    console.log(`Error in getMyProfile: ${error.message}`);
+    return res.status(500).json({
+      success: false,
+      message: "Internal server error",
+    });
+  }
+};
+
 export const logoutUser = async (req, res) => {
   try {
     const token = req.cookies?.auth_token;
